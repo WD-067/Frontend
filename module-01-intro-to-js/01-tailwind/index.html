@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+    </style>
+
+    <style type="text/tailwindcss">
+      @theme {
+        /* --color-clifford: #da373d; */
+        --font-cursive: 'Cedarville Cursive';
+      }
+
+      @layer components {
+        .list-items {
+          @apply p-2 text-white rounded-md font-bold hover:bg-orange-300 cursor-pointer hover:text-black;
+        }
+      }
+    </style>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+
+  <body class="bg-orange-200 sm:max-md:bg-white">
+    <header>
+      <nav class="font-cursive">
+        <ul class="bg-orange-500 bg-orange-700 flex justify-around">
+          <li class="list-items">Home</li>
+          <li class="list-items">About</li>
+          <li class="list-items">Contact</li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="p-2 shadow-lg">
+      <h1 class="text-2xl font-bold">Hello world!</h1>
+      <p class="m-[27px]">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat
+        dignissimos nemo commodi nostrum eum atque vel sit officiis debitis
+        molestias.
+      </p>
+    </main>
+  </body>
+</html>
