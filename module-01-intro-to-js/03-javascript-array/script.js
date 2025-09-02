@@ -4,7 +4,7 @@
 // String
 // Boolean
 // Symbols
-// indefined
+// undefined
 // null
 
 // ##### Objects / Reference (memory address) Data Types #####
