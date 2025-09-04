@@ -26,7 +26,7 @@ const [inputOne, inputTwo] = args;
 // parseFloat("4.2px") // 4.2
 
 const num1 = Number(inputOne);
-// const num1 = +inputOne; //// Shorthand for Number(inputOne)
+// const num1 = +inputOne; // Shorthand for Number(inputOne)
 const num2 = Number(inputTwo);
 
 // Global isNaN - converts first, then checks
