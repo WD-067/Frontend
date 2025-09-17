@@ -5,14 +5,13 @@ function StudentList() {
     { id: 3, name: "Harshi", country: "India" },
   ];
 
-  //   Have a list items that say: "Anila from India"
   return (
     <ul>
       {/* {[
         <li>Anila from India</li>,
         <li>Aziz from Pakistan</li>,
         <li>Harshi from India</li>,
-      ]} */}
+        ]} */}
       {students.map((student) => {
         return (
           <li key={student.id}>
@@ -22,6 +21,7 @@ function StudentList() {
       })}
     </ul>
   );
+  //   Have a list items that say: "Anila from India"
 }
 
 export default StudentList;
