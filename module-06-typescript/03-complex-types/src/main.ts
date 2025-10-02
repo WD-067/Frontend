@@ -46,7 +46,7 @@ const people: Person[] = [];
 people.push(person);
 people.push(person2);
 
-people.push({ name: "Susan" });
+// people.push({ name: "Susan" });
 
 // person.name = "Captain America";
 person.age = 73;
@@ -66,9 +66,9 @@ console.log(person.city || "Unkown");
 console.log(person.city ?? "Unkown");
 
 console.log(0 || "Default"); // "Default"
-console.log(0 ?? "Default"); // 0
-console.log(null || "Default"); // "Default"
-console.log(null ?? "Default"); // "Default"
+// console.log(0 ?? "Default"); // 0
+// console.log(null || "Default"); // "Default"
+// console.log(null ?? "Default"); // "Default"
 
 // # Array of Objects
 // # Interfaces
@@ -86,9 +86,8 @@ console.log(user);
 
 user.forEach((user) => {
   console.log(
-    `${user.name} if ${user.age} years old. ${
-      user.isActive ? "User is active" : "User is ianctive"
-    }`
+    `${user.name} if ${user.age} years old.
+    `
   );
 });
 
@@ -138,7 +137,7 @@ const userI: DBUserInterfacee = {
 
 // # Mapped Objects
 // # Literal Unions
-type Direction = "left" | "right" | "up" | "down" | "forward";
+type Direction = "left" | "right" | "up" | "down";
 
 // Example 1: Using in a variable
 let move: Direction = "up";
@@ -150,7 +149,7 @@ function movePlayer(direction: Direction) {
 
 movePlayer("left"); //
 movePlayer("down"); //
-movePlayer("forward"); //  Error: Argument of type '"forward"' is not assignable to type 'Direction'
+// movePlayer("forward"); //  Error: Argument of type '"forward"' is not assignable to type 'Direction'
 
 // Example 3: Switch statement with exhaustive checking
 function handleDirection(dir: Direction) {
@@ -175,7 +174,7 @@ function handleDirection(dir: Direction) {
 }
 
 handleDirection("up");
-handleDirection("forward"); //  Error: Argument of type '"forward"' is not assignable to type 'Direction'
+// handleDirection("forward"); //  Error: Argument of type '"forward"' is not assignable to type 'Direction'
 
 // # Function Types
 type Calculation = (num1: number, num2: number) => number;
@@ -184,4 +183,4 @@ const add: Calculation = (a, b) => a + b;
 
 const subtract: Calculation = (a, b) => a - b;
 
-add("4", 5);
+// add("4", 5);
